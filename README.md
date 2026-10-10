@@ -1,5 +1,16 @@
 # MultiPaaS Homebrew tap
 
+While the repositories are private, install with a GitHub token, after the git credentials in
+[the section below](#while-the-repositories-are-private). This needs the
+[GitHub CLI](https://cli.github.com) (`gh`) installed and signed in:
+
+```bash
+brew tap multipaas-apps/tap
+HOMEBREW_GITHUB_API_TOKEN="$(gh auth token)" brew install multipaas-apps/tap/multipaas
+```
+
+Once the repositories are public, no token is needed:
+
 ```bash
 brew tap multipaas-apps/tap
 brew install multipaas-apps/tap/multipaas
