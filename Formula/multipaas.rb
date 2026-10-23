@@ -6,20 +6,20 @@ require_relative "../lib/private_release_download"
 class Multipaas < Formula
   desc "Sign in to MultiPaaS and work with your apps from the command line"
   homepage "https://github.com/MultiPaaS-Apps/cli"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.6.0/multipaas_0.6.0_darwin_amd64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "a98d4fb7710d7538b39f24363747cfe8a57ceefe9a746c74d18f883641f02fa7"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.7.0/multipaas_0.7.0_darwin_amd64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
+      sha256 "64b171a2e5c6b40837e72e2e599fe60e734354e141b6d96bcc4271b0e4c30293"
 
       define_method(:install) do
         bin.install "multipaas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.6.0/multipaas_0.6.0_darwin_arm64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "93da3ecbde528e4df127e80a765bbf607010bb1a7fc3babaf9b38532bfd9b66c"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.7.0/multipaas_0.7.0_darwin_arm64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
+      sha256 "abe189fd13dc8ab098e0d8ec056525de3a69bc77842170ce842b05e879025d9d"
 
       define_method(:install) do
         bin.install "multipaas"
@@ -29,15 +29,15 @@ class Multipaas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.6.0/multipaas_0.6.0_linux_amd64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "e2ffe207475d6e0b6f112a050f99f2b1e13e35c2997097028ea71af1556c7631"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.7.0/multipaas_0.7.0_linux_amd64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
+      sha256 "f0b5ec0c63b2415dd03d11d55ef1d43ea0ff6806f71b88e90eb802df88f2c82d"
       define_method(:install) do
         bin.install "multipaas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.6.0/multipaas_0.6.0_linux_arm64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "3933890d08a966dcf387f40aa0932ab411369daa04d88e42ee8a606385de1b22"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v0.7.0/multipaas_0.7.0_linux_arm64.tar.gz", using: GitHubPrivateReleaseDownloadStrategy
+      sha256 "1253d149d8f11126d99193f4f8482fee6568544edff5a5a161ee9de87c1733c8"
       define_method(:install) do
         bin.install "multipaas"
       end
