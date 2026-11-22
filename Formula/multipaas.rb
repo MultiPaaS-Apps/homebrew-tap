@@ -5,20 +5,20 @@
 class Multipaas < Formula
   desc "Sign in to MultiPaaS and work with your apps from the command line"
   homepage "https://github.com/MultiPaaS-Apps/cli"
-  version "1.10.1"
+  version "1.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.10.1/multipaas_1.10.1_darwin_amd64.tar.gz"
-      sha256 "1cedd585f723637807692e636d56850a5fe328d68665f8b76b238ecf5041ddab"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.11.0/multipaas_1.11.0_darwin_amd64.tar.gz"
+      sha256 "8a07fbaebbdbe74af46671f5fcb0e68898d5f38ed11a4d217479181cfb0af1c9"
 
       define_method(:install) do
         bin.install "multipaas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.10.1/multipaas_1.10.1_darwin_arm64.tar.gz"
-      sha256 "93f97c7f862f08b083d159c5b50e2766d2a1dd422248339e9362fcd9fc0c30e4"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.11.0/multipaas_1.11.0_darwin_arm64.tar.gz"
+      sha256 "cd1f147c8d60527d06e2be62af2b71783ba98447e0b073877d461b1975cd74d6"
 
       define_method(:install) do
         bin.install "multipaas"
@@ -28,15 +28,15 @@ class Multipaas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.10.1/multipaas_1.10.1_linux_amd64.tar.gz"
-      sha256 "c5b6930299008bb02fda544c535773880f49b8e22dd17a271dc2b02e563f481c"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.11.0/multipaas_1.11.0_linux_amd64.tar.gz"
+      sha256 "67ca23a73a809f59261a006e13bb187ac2d96b0829217b477ae47e64368823dd"
       define_method(:install) do
         bin.install "multipaas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.10.1/multipaas_1.10.1_linux_arm64.tar.gz"
-      sha256 "6befa9a3d9889e96c789384af89a3d54ada654eaf24e2f806ed95b5e54b6e625"
+      url "https://github.com/MultiPaaS-Apps/cli/releases/download/v1.11.0/multipaas_1.11.0_linux_arm64.tar.gz"
+      sha256 "72920011f70c0fe8ff0820d227f3a61e832a7471b1b363041eaaccdddd897f5e"
       define_method(:install) do
         bin.install "multipaas"
       end
